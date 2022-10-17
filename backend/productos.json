@@ -1,0 +1,5 @@
+[
+    {"id":1,"nombre":"Rtx 3080","precio":175000,"foto":"../frontend/img/rtx-3080.jpg"},
+    {"id":2,"nombre":"i5 10400","precio":15000,"foto":"../frontend/img/i5-10400.jpg"},
+    {"id":3,"nombre":"Ryzen 5 5600x","precio":30000,"foto":"../frontend/img/ryzen-5-5600x.jpg"}
+]
