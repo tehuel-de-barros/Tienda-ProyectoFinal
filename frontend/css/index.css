@@ -6,10 +6,11 @@
 
 body{
     font-family: 'Roboto', sans-serif;
+    
 }
 img {
     width: 100%;
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
 }
 header {
     display: flex;
@@ -18,26 +19,22 @@ header {
     padding: 20px 10%;
     box-shadow: 0px 5px 4px 3px rgba(0, 0, 0, 0.3);
     margin-bottom: 20px;
+    background-color: #000000;
 }
-h1 {
-    color: royalblue;
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 50px;
-}
+
 #boton-carrito {
     border: none;
-    color: royalblue;
+    color: rgb(92, 3, 3);
     font-size: 40px;
-    background-color: white;
-    border-radius: 50%;
+    background-color: black;
+    /* border-radius: ; */
     padding: 10px 20px;
     transition: all .3s;
 }
 #boton-carrito:hover {
     cursor: pointer;
     color: white;
-    background-color: royalblue;
+    /* background-color: royalblue; */
 }
 #boton-carrito:focus {
     outline: none;
@@ -54,23 +51,9 @@ h1 {
 p {
     line-height: 1.8;
 }
-.producto {
-    max-width: 20%;
-    padding: 10px;
-    margin: 10px;
-    margin-bottom: 20px;
-    box-shadow: 2px 6px 3px 3px rgba(0, 0, 0, 0.3);
-}
+
 .precioProducto {
     font-weight: 700;
-}
-.boton-agregar {
-    background-color: royalblue;
-    color: white;
-    font-size: 18px;
-    font-weight: 700;
-    padding: 5px;
-    border: none;
 }
 .boton-agregar:hover {
     cursor: pointer;
@@ -105,6 +88,7 @@ p {
     padding: 20px;
     margin-top: -100%;
     transition: all .5s;
+    border-radius: 10px;
 }
 
 .modal-active .modal-carrito {
@@ -160,4 +144,34 @@ p {
 }
 .boton-eliminar:focus {
     outline: none;
+}
+
+
+
+
+#catalogo { 
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.producto {
+    max-width: 30%;
+    padding: 10px;
+    margin: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #000000;
+    -moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
+    padding: 40px;
+    background-color: white;
+}
+
+.hola{ 
+    background-color: #B5B2B2;
+}
+
+
+footer img { 
+   width: 20%; 
 }

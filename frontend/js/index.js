@@ -1,6 +1,6 @@
 const url = '../backend/productos.json'
 const productos = [];
-const carrito = [];
+let carrito = [];
 // Creamos a la funcion BD para que bsuque a la variable url, recuperamos los datos localizados en la var url, y los pusheamos a el array productos   
 
 const cat = document.getElementById('catalogo');
@@ -8,6 +8,14 @@ const contCar = document.getElementById('contCar');
 const empty = document.getElementById('empty');
 const contadorCar = document.getElementById('contadorCar');
 let precio = document.getElementById('price');
+
+document.addEventListener('DOMContentLoaded', () => {
+    if (localStorage.getItem('carrito')){
+        //carrito tiene que ser let 
+        carrito = JSON.parse(localStorage.getItem('carrito'));
+        renderCar();
+    }else return(console.log('No hay entradas en el localStorage'));
+})
 
 let catalogo = () => { 
     productos.forEach((info, index) => {
@@ -30,11 +38,11 @@ let catalogo = () => {
 
 
 let agregarAlCarrito = (ID) => {
-    const items = productos.find(prod => prod.id === ID);
-    carrito.push(items);
-    renderCar();
-    console.log(carrito);
-}
+        const items = productos.find(prod => prod.id === ID);
+        carrito.push(items);
+        console.log(carrito);
+        renderCar();
+    }
 
 let renderCar = () => {
     contCar.innerHTML = "";
@@ -45,7 +53,7 @@ let renderCar = () => {
         div.innerHTML = `
         <p>${producto.nombre}</p>
         <p>Precio:$${producto.precio}</p>
-        <p>Cantidad: <span id="cantidad">${producto.cantidad}</span></p>
+        <p>Gama: <span id="cantidad">${producto.gama}</span></p>
         <button onclick="eliminarCar(${producto.id})" class="boton-eliminar"><i class="fas fa-trash-alt"></i></button>
         `
         contCar.appendChild(div);
@@ -83,17 +91,8 @@ let BD = () => {
         .catch(err => console.log(err));
 }
 
-
 BD();
 console.log(productos);
 
 
-
-// localStorage 
-document.addEventListener('DOMContentLoaded', () => {
-    if (localStorage.getItem('carrito')){
-        carrito = JSON.parse(localStorage.getItem('carrito'));
-        renderCar();
-    }
-})
 

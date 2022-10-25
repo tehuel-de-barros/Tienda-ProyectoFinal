@@ -1,5 +1,12 @@
 [
-    {"id":1,"nombre":"Rtx 3080","precio":175000,"foto":"../frontend/img/rtx-3080.jpg"},
-    {"id":2,"nombre":"i5 10400","precio":15000,"foto":"../frontend/img/i5-10400.jpg"},
-    {"id":3,"nombre":"Ryzen 5 5600x","precio":30000,"foto":"../frontend/img/ryzen-5-5600x.jpg"}
+    {"id":1, "nombre":"Rtx 3080", "precio":175000,"gama":"alta", "cantidad":1, "foto":"../frontend/img/rtx-3080.jpg"},
+    {"id":2, "nombre":"i5 10400", "precio":15000,"gama":"media", "cantidad":1,"foto":"../frontend/img/i5-10400.jpg"},
+    {"id":3, "nombre":"Ryzen 5 5600x", "precio":30000, "gama":"media", "cantidad":1, "foto":"../frontend/img/ryzen-5-5600x.jpg"},
+    {"id":4, "nombre":"i9-12900k", "precio":30000, "gama":"alta", "cantidad":1, "foto":"../frontend/img/i9-12900k.png"},
+    {"id":5, "nombre":"Memoria-8gb-3200mhz", "precio":30000, "gama":"media", "cantidad":1, "foto":"../frontend/img/Memoria-8gb-3200mhz.jpg"},
+    {"id":6, "nombre":"Notebook-bravo-msi", "precio":30000, "gama":"media", "cantidad":1, "foto":"../frontend/img/Notebook-bravo-msi.jpg"},
+    {"id":7, "nombre":"Notebook-crosshair", "precio":15000,"gama":"alta", "cantidad":1,"foto":"../frontend/img/Notebook-crosshair.jpg"},
+    {"id":8, "nombre":"i3 12100", "precio":15000,"gama":"baja", "cantidad":1,"foto":"../frontend/img/i3-12100.jpg"},
+    {"id":9, "nombre":"ryzen-5-5600g", "precio":15000,"gama":"alta", "cantidad":1,"foto":"../frontend/img/ryzen-5-5600g.jpg"}
+
 ]
